@@ -1,6 +1,7 @@
 
     <!-- Header Start -->
     <div class="page-width">
+      {% if page.title = "home" }
     <section class="msg msg--alert text--center">
         <span class="msg-close" onclick="this.parentElement.style.display='none';">&times;
         </span> 
@@ -11,6 +12,7 @@
     </span>
     </p>
 </section>
+{% endif %}
     <header class="site-header">
         <div class="padded site-header__wrapper">
           <div class="site-header__start">
