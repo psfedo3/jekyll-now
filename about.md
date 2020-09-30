@@ -15,6 +15,7 @@ permalink: /about/
         {{ item.name }}
       </a>
     </li>
+    {% endfor %}
     </ul>
     </div>
     
