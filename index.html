@@ -2,17 +2,64 @@
 layout: default
 ---
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
-
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-
-      <div class="entry">
-        {{ post.excerpt }}
+<h1> {{ page.title }} </h1>
+  <section class="section section--primary">
+    <div class="text text--white text--center">
+      <div class="page-title">
+        <h1 class="text--title gotham">
+          Pastor Seeds Family
+        </h1>
+        <p class="h1 gotham">
+          Edo Province 3
+        </p>
       </div>
-
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
-</div>
+      <div class="page-links">
+        <a href="#contact">
+          Get in Touch
+        </a>
+        <a href="family.html">
+          Meet The Family
+        </a>
+        <a href="join.html">
+          Join The Family
+        </a>
+      </div>
+      <a href="about.html" class="btn btn--full btn--white btn--large">
+        Find Out More
+      </a>
+      <ul class="tabs flex">
+        <li class="tabs-list">
+          <a href="events.html" class="tabs-link flex align-center justify-center">
+            <svg class="icon" width="30px" height="30px">
+              <use xlink:href="#icon-events"></use>
+            </svg>
+            <span>Events</span>
+          </a>
+        </li>
+        <li class="tabs-list">
+          <a href="gallery.html" class="tabs-link flex align-center justify-center">
+            <svg class="icon" width="30px" height="30px">
+              <use xlink:href="#icon-gallary"></use>
+            </svg>
+            <span>Gallary</span>
+          </a>
+        </li>
+        <li class="tabs-list">
+          <a href="faq.html" class="tabs-link flex align-center justify-center">
+            <svg class="icon" width="30px" height="30px">
+              <use xlink:href="#icon-faq"></use>
+            </svg>
+            <span>FAQ</span>
+          </a>
+        </li>
+        <li class="tabs-list">
+          <a href="blog.html" class="tabs-link flex align-center justify-center">
+            <svg class="icon" width="30px" height="30px">
+              <use xlink:href="#icon-doc"></use>
+            </svg>
+            <span>Journal</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
