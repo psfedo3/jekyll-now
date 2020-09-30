@@ -28,11 +28,13 @@
               </button>
               <ul class="nav__wrapper">
                   <div class="nav__wrapper__inner">
-                <li class="nav__item"><a href="/">Home</a></li>
-                <li class="nav__item"><a href="/about">About</a></li>
-                <li class="nav__item"><a href="/gallery">Gallary</a></li>
-                <li class="nav__item"><a href="/events">Events</a></li>
-                <li class="nav__item"><a href="/contact">Contact</a></li>
+   {% for item in site.data.navigation %}
+    <li class="nav__item">
+      <a href="{{ item.link }}" {% if page.url == item.link %}style="text-decoration: underline;" {% endif %}>
+        {{ item.name }}
+        </a>
+    </li>
+    {% endfor %}
             </div>
               </ul>
             </nav>
