@@ -2,7 +2,11 @@ collections:
   authors:
     output: true
     
-#
+jekyll_get:
+  - data: members
+    json: 'http://getsimpleform.com/messages.json?api_token=d106a0ea4a6e2f746194d0b233704f91'
+    cache: true
+  
 # This file contains configuration flags to customize your site
 #
 
