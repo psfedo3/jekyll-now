@@ -31,9 +31,11 @@
                 </small>
             </div>
 
-    <form action="https://formspree.io/f/xjvpkaea"
+    <form action="https://getsimpleform.com/messages?form_api_token=ce66fa5c102692dd1bffc621c0cc288f"
     method="POST"
     enctype="multipart/form-data" class="auth__modal__form">
+      <input type="hidden" name="redirect_to" value="https://psfedo3.github.io" />
+      <input type="text" name="message" />
                 <fieldset>
                     <legend class="membership-checkout__hint membership-checkout__hint--personal">
                         Hey! we just need a few things from you...<br><small>We call people by their real names around here. It is a <em>family</em> after all.</small>
@@ -44,7 +46,7 @@
                                 Your first name
                             </label>
                             <div class="input-wrapper">
-                                <input label="Your first name" class="form__field__input" type="text" id="firstName" inputmode="text" name="firstname" value="">
+                                <input label="Your first name" class="form__field__input" type="text" id="firstName" inputmode="text" name="firstname" value="" required>
                             </div>
                         </label>
                         <label class="form__field blurred field--half form__field--floating">
@@ -52,7 +54,7 @@
                                 Your family name
                             </label>
                             <div class="input-wrapper">
-                                <input label="Your family name" class="form__field__input" type="text" id="FamilyName" inputmode="text" name="lastname" value="">
+                                <input label="Your family name" class="form__field__input" type="text" id="FamilyName" inputmode="text" name="lastname" value="" required>
                             </div>
                         </label>
                     </div>
@@ -62,7 +64,7 @@
                                 Your Parish (Under Edo Province 3) 
                             </label>
                             <div class="input-wrapper">
-                                <input label="Your Parish (Under RCCG Edo Province 3) " id="parish" type="text" class="form__field__input" inputmode="text" name="Parish" value="">
+                                <input label="Your Parish (Under RCCG Edo Province 3) " id="parish" type="text" class="form__field__input" inputmode="text" name="Parish" value="" required>
                             </div>
                         </label>
                     </div>
@@ -89,7 +91,7 @@
                                 Email
                             </label>
                             <div class="input-wrapper">
-                                <input label="Email" type="email" class="form__field__input" id="email" inputmode="email" name="email" value="">
+                                <input label="Email" type="email" class="form__field__input" id="email" inputmode="email" name="email" value="" required>
                             </div>
                         </label>
                         <label class="form__field blurred field--half form__field--floating field--half">
@@ -97,7 +99,7 @@
                                Phone Number
                             </label>
                             <div class="input-wrapper">
-                                <input label="Phone Number" type="number" class="form__field__input" id="number" inputmode="number" name="number" value="">
+                                <input label="Phone Number" type="number" class="form__field__input" id="number" inputmode="number" name="number" value="" required>
                             </div>
                         </label>
                     </div>
@@ -125,7 +127,7 @@
                                 Enter your level (An Exco, a old Member or New Member)
                             </label>
                             <div class="input-wrapper">
-                                <input label="Enter your level (An Exco, a old Member or a New Member )" class="form__field__input" autocapitalize="off" type="text" id="level" inputmode="text" name="Level_Of involvement_in_psf" value="">
+                                <input label="Enter your level (An Exco, a old Member or a New Member )" class="form__field__input" autocapitalize="off" type="text" id="level" inputmode="text" name="Level_Of involvement_in_psf" value="" required>
                             </div>
                         </label>
                     </div>
@@ -182,7 +184,7 @@
                         <img src="" alt="upload a loving photo of you" class="form-img js-image-upload">
                     </div>
                         <div class="input-wrapper">
-                            <input label="Upload your photo" class="form__field__input" type="file" accept="image/*" onchange="previewImage(event)" id="file" inputmode="text" name="upload">
+                            <input label="Upload your photo" class="form__field__input" type="file" accept="image/*" onchange="previewImage(event)" id="file" inputmode="text" name="upload" required>
                         </div>
                     </label>
                 </div>
@@ -196,9 +198,8 @@
                         </span>
                      </button>
                     </div>
-    <input type="hidden" name="_next" value="/thanks.html" />
-    <input type="text" name="_gotcha" style="display:none" />
-                    </form>
+    
+    </form>
                 </div>            
         </div>
            
