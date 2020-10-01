@@ -1,0 +1,9 @@
+---
+layout: default
+title: meet the family
+permalink: /family/
+---
+
+{% for member in site.data.members %}
+Hello {{member[1].first_name}}
+{% endfor %}
