@@ -76,14 +76,21 @@ sass:
   style: :expanded # You might prefer to minify using :compressed
 
 # Use the following plug-ins
-gems:
-  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
-  - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-paginate-v2
+  - jekyll-seo-tag
+  - jekyll-compose
+  - jekyll-redirect-from
 
-# Exclude these files from your production _site
+# Exclude these files from the build process results.
+# Prevents them from showing up in the master branch which 
+# is the live site.
 exclude:
+  - vendor
   - Gemfile
   - Gemfile.lock
   - LICENSE
   - README.md
-  - CNAME
+  - Rakefile
