@@ -2,11 +2,16 @@ collections:
   authors:
     output: true
     
-jekyll_get:
-  - data: members
-    json: 'http://getsimpleform.com/messages.json?api_token=d106a0ea4a6e2f746194d0b233704f91'
-    cache: true
-  
+asciidoc: {}
+  asciidoctor:
+    base_dir: :docdir
+    safe: unsafe
+    attributes:
+      - idseparator=_
+      - source-highlighter=coderay
+      - icons=font
+      
+      
 # This file contains configuration flags to customize your site
 #
 
@@ -84,7 +89,7 @@ sass:
 gems:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
   - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
-  - Jekyll-get
+
 # Exclude these files from your production _site
 exclude:
   - Gemfile
